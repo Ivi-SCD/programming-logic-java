@@ -41,8 +41,8 @@ public class HelloWorld {
 ```
 
 Simples e fácil, concorda? Iremos explorar agora alguma características da linguagem, 
-a medida que o curso for passando vocês compreenderam mais palavra e sintaxe do código java,
-a melhor maneira de ir aprendendo a sintaxe por enquanto é fazer diversos programas, mesmo que simples
+a medida que o curso for passando vocês compreenderam mais as palavras e sintaxe do código java,
+a melhor maneira de ir aprendendo a sintaxe por enquanto é fazendo diversos programas, mesmo que simples
 para seu cérebro começar a ir memorizando algumas etapas e com o tempo isso vai se tornar algo automático.
 
 ### <a name= "datatypes"> Tipos de Dados </a>
