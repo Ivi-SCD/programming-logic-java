@@ -8,7 +8,7 @@ os computadores funcionam até a interpretação dos mesmos para as informaçõe
 Vou tentar com o decorrer do período subir neste repositório
 algumas listas de exercícios sobre determinados assuntos trabalhado em sala tal como sua resolução
 e outros materiais de estudo, qualquer dúvida vocês podem falar comigo pelo
-meu [Whatsapp (Apenas clicar aqui que você será redirecionado ao meu número).](https://api.whatsapp.com/send?phone=5581997053349&text=Ol%C3%A1%20Ivisson!%20Estava%20olhando%20seu%20perfil%20no%20github%20e%20gostaria%20de%20entrar%20em%20contato!!%20%F0%9F%98%80)
+meu [Whatsapp (Apenas clicar aqui que você será redirecionado ao meu número com uma mensagem automática).](https://api.whatsapp.com/send?phone=5581997053349&text=Ol%C3%A1%20Ivisson!%20Estava%20olhando%20seu%20perfil%20no%20github%20e%20gostaria%20de%20entrar%20em%20contato!!%20%F0%9F%98%80)
 
 *Você pode selecionar aqui determinado tópico que você deseja ver:*
 * [Instalação](#instalacao)
