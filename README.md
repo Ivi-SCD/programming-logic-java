@@ -11,17 +11,18 @@ e outros materiais de estudo, qualquer dúvida vocês podem falar comigo pelo
 meu [Whatsapp (Apenas clicar aqui que você será redirecionado ao meu número).](https://api.whatsapp.com/send?phone=5581997053349&text=Ol%C3%A1%20Ivisson!%20Estava%20olhando%20seu%20perfil%20no%20github%20e%20gostaria%20de%20entrar%20em%20contato!!%20%F0%9F%98%80)
 
 *Você pode selecionar aqui determinado tópico que você deseja ver:*
-* 
-*
-*
-*
+* [Instalação](#instalacao)
+* [Sintaxe Básica](#sintaxe)
+* [Tipos de dados](#datatypes)
+* [Operadores](#operadores)
+* [Estruturas de Controle](#estruturascontrole)
 
 ## Vamos lá, Mão na massa!
 Primeiro vamos começar falando sobre a própria linguagem que será utilizada em sala a linguagem Java, 
 ela é uma linguagem de programação Orientada a Objetos, criada pela Sun Microsystems e atualmente mantida pela Oracle Corporation. 
 Ela foi lançada em 1995 e se tornou uma das linguagens de programação mais populares do mundo.
 
-### Instalação
+### <a name= "instalacao"> Instalação </a>
 Para começar a programar em Java você precisa baixar o [JDK](https://www.oracle.com/br/java/technologies/downloads/) (Java Development Kit) da Oracle. O JDK inclui o compilador Java,
 que permite transformar seu código em bytecode, que pode ser executado na JVM (Java Virtual Machine). Após instalar o JDK podemos instalar a nossa IDE (Integrated Development Environment ou Ambiente de Desenvolvimento Integrado),
 no nosso caso estaremos usando o [Eclipse](https://www.eclipse.org/downloads/), mas existem outras opções como o Netbeans ou o IntelliJ. Resumindo, os passos seriam estes:
@@ -29,7 +30,7 @@ no nosso caso estaremos usando o [Eclipse](https://www.eclipse.org/downloads/), 
 * Baixar e Instalar a [IDE](https://www.eclipse.org/downloads/)
 * Começar a programar!
 
-### Sintaxe Básica
+### <a name= "sintaxe"> Sintaxe Básica </a>
 Segue abaixo um exemplo de um programa "Hello, World!" em Java:
 ```java
 public class HelloWorld {
@@ -44,7 +45,7 @@ a medida que o curso for passando vocês compreenderam mais palavra e sintaxe do
 a melhor maneira de ir aprendendo a sintaxe por enquanto é fazer diversos programas, mesmo que simples
 para seu cérebro começar a ir memorizando algumas etapas e com o tempo isso vai se tornar algo automático.
 
-### Tipos de Dados
+### <a name= "datatypes"> Tipos de Dados </a>
 Java tem diversos tipos de dados que podem ser divididos em dois grupos:
 primitivos e de referência. Os tipos de dados primitivos são aqueles que armazenam
 valores simples, como números inteiros, números de ponto flutuante e caractere. Já os
@@ -96,7 +97,7 @@ boolean tipoBooleano = true;
 char tipoCaractere = 'Y';
 ```
 
-### Operadores
+### <a name= "operadores"> Operadores </a>
 |Operador|Descrição
 |---|---
 |+	|Adição
@@ -114,7 +115,7 @@ char tipoCaractere = 'Y';
 
 Além destes operadores também temos o operador `||` que representa o OU lógico.
 
-### Estruturas de Controle
+### <a name= "estruturascontrole"> Estruturas de Controle </a>
 As estruturas de controle são usadas geralmente para controlar o fluxo de execução do programa. As principais estruturas de controle em Java são:
 
 #### Estrutura condicional `if`
