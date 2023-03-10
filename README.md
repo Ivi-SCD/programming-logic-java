@@ -69,7 +69,7 @@ maior será o valor que poderá ser armazenado neles, e os tipos que representam
 (float e double) seguindo a mesma lógica. Já o tipo (char) serve para representar apenas caracteres como letras 
 singulares ou apenas números e o tipo (boolean) serve para representar valores lógicos como true ou false, 0 ou 1.
 
-Para declara uma variável em Java utilizamos a seguinte sintaxe:
+Para declarar uma variável em Java utilizamos a seguinte sintaxe:
 ```java
 tipo nomeDaVariável;
 ```
@@ -98,6 +98,9 @@ char tipoCaractere = 'Y';
 ```
 
 ### <a name= "operadores"> Operadores </a>
+Podemos também realizar operações matemáticas e 
+lógicas no nosso código Java, segue uma tabela com os principais operadores:
+
 |Operador|Descrição
 |---|---
 |+	|Adição
