@@ -8,7 +8,7 @@ os computadores funcionam até a interpretação dos mesmos para as informaçõe
 Vou tentar com o decorrer do período subir neste repositório
 algumas listas de exercícios sobre determinados assuntos trabalhado em sala tal como sua resolução
 e outros materiais de estudo, qualquer dúvida vocês podem falar comigo pelo
-meu [Whatsapp (Apenas clicar aqui que você será redirecionado ao meu número com uma mensagem automática).](https://api.whatsapp.com/send?phone=5581997053349&text=Ol%C3%A1%20Ivisson!%20Estava%20olhando%20seu%20perfil%20no%20github%20e%20gostaria%20de%20entrar%20em%20contato!!%20%F0%9F%98%80)
+meu [Whatsapp apenas cliclando aqui.](https://api.whatsapp.com/send?phone=5581997053349&text=Ol%C3%A1%20Ivisson!%20Estava%20olhando%20seu%20perfil%20no%20github%20e%20gostaria%20de%20entrar%20em%20contato!!%20%F0%9F%98%80)
 
 *Você pode selecionar aqui determinado tópico que você deseja ver:*
 * [Instalação](#instalacao)
@@ -16,6 +16,9 @@ meu [Whatsapp (Apenas clicar aqui que você será redirecionado ao meu número c
 * [Tipos de dados](#datatypes)
 * [Operadores](#operadores)
 * [Estruturas de Controle](#estruturascontrole)
+
+*Listas de Exercicios:*
+* [Estruturas Condicionais](https://github.com/Ivi-SCD/Logica-da-Programacao-1P/tree/main/Listas%20de%20Exercicios/Estruturas%20Condicionais)
 
 ## Vamos lá, Mão na massa!
 Primeiro vamos começar falando sobre a própria linguagem que será utilizada em sala a linguagem Java, 
@@ -44,6 +47,25 @@ Simples e fácil, concorda? Iremos explorar agora alguma características da lin
 a medida que o curso for passando vocês compreenderam mais as palavras e sintaxe do código java,
 a melhor maneira de ir aprendendo a sintaxe por enquanto é fazendo diversos programas, mesmo que simples
 para seu cérebro começar a ir memorizando algumas etapas e com o tempo isso vai se tornar algo automático.
+
+### Tutorial Simples de Como Criar um Projeto no Eclipse
+1. Baixe e instale o Eclipse: O Eclipse pode ser baixado gratuitamente no [site oficial](https://www.eclipse.org/downloads/). 
+Basta escolher a versão apropriada para o seu sistema operacional e seguir as instruções de instalação.
+
+2. Crie um novo projeto: Abra o Eclipse e clique em "File" no menu principal. 
+Em seguida, selecione "New" e "Java Project". Digite um nome para o projeto e clique em "Finish".
+
+3. Crie uma nova classe: No Package Explorer (painel esquerdo), clique com o botão direito 
+do mouse no nome do projeto que você acabou de criar. Selecione "New" e "Class". 
+Digite um nome para a classe e clique em "Finish" 
+* Obs: Não se esqueça de marcar o "static void main".
+
+4. Escreva o código: Na janela principal do Eclipse, você verá um editor de texto em branco. 
+É aqui que você escreverá o código Java para a sua classe.
+
+5. Execute o código: Para executar o código, clique com o botão direito do mouse na classe 
+que você acabou de criar no Package Explorer. Selecione "Run As" e "Java Application". 
+Então voilá! O console do Eclipse exibirá a saída do seu programa.
 
 ### <a name= "datatypes"> Tipos de Dados </a>
 Java tem diversos tipos de dados que podem ser divididos em dois grupos:
