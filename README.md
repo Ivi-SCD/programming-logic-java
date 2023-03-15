@@ -17,7 +17,7 @@ meu [Whatsapp apenas clicando aqui.](https://api.whatsapp.com/send?phone=5581997
 * [Operadores](#operadores)
 * [Estruturas de Controle](#estruturascontrole)
 
-*Listas de Exercicios:*
+*Listas de Exercicios:* (Para verificar as respostas entre no diretório de resoluções na pasta src logo após e selecione a dificuldade, em seguida procure a classe que mais se adepta a questão, por exemplo, a questão de número 1 na dificuldade díficil no arquivo .txt é a questão que envolve números de Mersenne, logo, sua classe será a NumerosMersenne)
 * [Estruturas Condicionais](https://github.com/Ivi-SCD/Logica-da-Programacao-1P/tree/main/Listas%20de%20Exercicios/Estruturas%20Condicionais)
 
 ## Vamos lá, Mão na massa!
