@@ -162,6 +162,8 @@ if (idade >= 18) {
 ```
 Se a idade for igual ou superior a 18, a mensagem "Você é maior de idade." será exibida na tela.
 
+##
+
 #### Estrutura condicional `if-else`
 A estrutura condicional if-else é usada para executar um bloco de código se uma determinada condição for verdadeira e outro bloco se a condição for falsa. A sintaxe é a seguinte:
 
@@ -185,6 +187,8 @@ if (idade >= 18) {
 ```
 
 Se a idade for igual ou superior a 18, a mensagem "Você é maior de idade." será exibida na tela. Caso contrário, a mensagem "Você é menor de idade." será exibida.
+
+##
 
 #### Estrutura condicional `else-if`
 A estrutura condicional else-if é usada para testar várias condições em sequência. A sintaxe é a seguinte:
@@ -215,3 +219,135 @@ if (nota >= 9) {
 }
 ```
 Neste exemplo, o programa verifica a nota do aluno e exibe uma mensagem correspondente de acordo com a nota.
+
+##
+
+#### Estrutura `condicional ternária`
+
+A estrutura condicional ternária é uma forma bem mais reduzida de escrever uma estrutura condicional 'if-else',
+ela pode ser utilizada em diversas ocasiões e também ajuda a tornar o código visivelmente mais limpo, segue a sua estrutura:.
+
+```java
+variavel = (condicao) ? valorSeVerdadeiro : valorSeFalso;
+```
+
+Aqui está um exemplo real:
+```java
+public static void main(String [] args) {
+    int valorProduto = 100;
+    
+    float desconto = (valorProduto > 50) ? 0.5F: 0.1F;
+    
+    int valorFinal = 100*desconto;
+}
+```
+##
+
+#### Estrutura de repetição  `while`
+A estrutura de repetição `while` permite executar um bloco de código repetidamente enquanto uma condição for verdadeira. A sintaxe é a seguinte:
+
+```java
+while (condicao) {
+  // bloco de codigo
+}
+```
+
+O bloco de código será executado repetidamente enquanto a condição especificada for verdadeira. 
+Se a condição for falsa na primeira verificação, o bloco de código não será executado.
+
+Um exemplo de uso do while é a leitura de dados de um usuário, onde o programa pede que o usuário insira um valor e verifica se a entrada está correta antes de continuar:
+
+```java
+import java.util.Scanner;
+
+public class ExemploWhile {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int numero = 0;
+        
+        while (numero <= 0) {
+            System.out.print("Digite um número positivo: ");
+            numero = scanner.nextInt();
+        }
+        
+        System.out.println("O número digitado foi: " + numero);
+        scanner.close();
+    }
+}
+```
+
+Neste exemplo, o programa solicita que o usuário digite um número positivo. 
+Enquanto o número digitado não for positivo, o programa continuará solicitando que o usuário digite um número.
+
+##
+
+#### Estrutura de repetição  `for`
+A estrutura de repetição `for` é uma estrutura de repetição que executa um bloco de código um número determinado de vezes. A sintaxe do `for` em Java é a seguinte:
+
+```java
+for (inicializacao; condicao; incremento) {
+  // bloco de codigo
+}
+```
+
+A inicialização é executada apenas uma vez no início do loop, a condição é verificada a cada iteração e, se for verdadeira, 
+o bloco de código é executado. Após cada iteração, o incremento é executado. Por exemplo, o código abaixo imprime os números de 1 a 5 usando um for:
+
+```java
+Copy code
+for (int i = 1; i <= 5; i++) {
+  System.out.println(i);
+}
+```
+
+Neste exemplo, a variável `i` é inicializada com o valor 1, a condição `i <= 5` é verificada a cada iteração e, se for verdadeira, o bloco de código dentro das chaves é executado, imprimindo o valor de `i`. Após cada iteração, `i` é incrementado em 1. O resultado será o mesmo que o exemplo anterior:
+
+```bash
+1
+2
+3
+4
+5
+```
+
+##
+
+#### Estrutura de repetição `do-while`
+
+A expressão `do-while` é uma estrutura de repetição em Java que é semelhante ao `while`, mas com a diferença de que o bloco de código dentro das chaves 
+é executado pelo menos uma vez, independentemente da condição ser verdadeira ou falsa.
+
+A sintaxe do do-while em Java é a seguinte:
+
+```java
+do {
+  // bloco de codigo
+} while (condicao);
+```
+
+O bloco de código dentro das chaves é executado primeiro, antes mesmo de verificar a condição. Depois, a condição é verificada. Se a condição for verdadeira, o bloco de código é executado novamente e o processo se repete. Se a condição for falsa, o loop termina e a execução continua normalmente.
+
+A principal diferença entre o `do-while` e o `while` é que o `do-while` garante que o bloco de código seja executado pelo menos uma vez, 
+enquanto o `while` pode pular a execução do bloco de código se a condição já for falsa no início.
+
+Por exemplo, o código abaixo imprime os números de 1 a 5 usando um do-while:
+
+```java
+int i = 1;
+do {
+  System.out.println(i);
+  i++;
+} while (i <= 5);
+```
+
+Neste exemplo, o bloco de código dentro das chaves é executado primeiro, imprimindo o valor de `i` e incrementando-o em 1 a cada iteração. Depois, a condição `i <= 5` é verificada. Como `i` ainda é menor ou igual a 5, o bloco de código é executado novamente. O processo se repete até que `i` seja maior que 5. O resultado será:
+
+```bash
+1
+2
+3
+4
+5
+```
+
+É importante notar que a variável `i` é inicializada antes do loop `do-while`, pois ela precisa ter um valor antes de ser usada no bloco de código.
