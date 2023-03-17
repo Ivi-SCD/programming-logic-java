@@ -1,3 +1,5 @@
+Language: [PT-BR](https://github.com/Ivi-SCD/Logica-da-Programacao-1P/tree/main#readme) | > **EN**
+
 ## Programming Logic :computer:
 #### Oops Guys! I'm creating this repository to help you in the subject of **Programming Logic** :computer:.
 I know that many of you are just starting out in the world of programming and may be facing
