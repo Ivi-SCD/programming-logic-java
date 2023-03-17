@@ -1,3 +1,5 @@
+Language: > **PT-BR** |  [EN](https://github.com/Ivi-SCD/Logica-da-Programacao-1P/blob/main/README_EN.md)
+
 ## Lógica de Programação :computer:
 #### Opa Galera! To criando esse repositório pra ajudar vocês na cadeira de **Lógica de Programação** :computer:.
 Sei que muitos de vocês estão começando agora no mundo da programação e podem estar enfrentando
