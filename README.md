@@ -16,6 +16,7 @@ meu [Whatsapp apenas clicando aqui.](https://api.whatsapp.com/send?phone=5581997
 * [Tipos de dados](#datatypes)
 * [Operadores](#operadores)
 * [Estruturas de Controle](#estruturascontrole)
+* [Arrays Unidimensionais (Vetores)](#arrays)
 
 *Listas de Exercicios:* (Para verificar as respostas entre no diretório de resoluções na pasta src logo após e selecione a dificuldade, em seguida procure a classe que mais se adepta a questão, por exemplo, a questão de número 1 na dificuldade díficil no arquivo .txt é a questão que envolve números de Mersenne, logo, sua classe será a NumerosMersenne)
 * [Estruturas Condicionais](https://github.com/Ivi-SCD/Logica-da-Programacao-1P/tree/main/Listas%20de%20Exercicios/Estruturas%20Condicionais)
@@ -33,6 +34,8 @@ no nosso caso estaremos usando o [Eclipse](https://www.eclipse.org/downloads/), 
 * Baixar e Instalar a [IDE](https://www.eclipse.org/downloads/)
 * Começar a programar!
 
+##
+
 ### <a name= "sintaxe"> Sintaxe Básica </a>
 Segue abaixo um exemplo de um programa "Hello, World!" em Java:
 ```java
@@ -47,6 +50,8 @@ Simples e fácil, concorda? Iremos explorar agora alguma características da lin
 a medida que o curso for passando vocês compreenderam mais as palavras e sintaxe do código java,
 a melhor maneira de ir aprendendo a sintaxe por enquanto é fazendo diversos programas, mesmo que simples
 para seu cérebro começar a ir memorizando algumas etapas e com o tempo isso vai se tornar algo automático.
+
+##
 
 ### Tutorial Simples de Como Criar um Projeto no Eclipse
 1. Baixe e instale o Eclipse: O Eclipse pode ser baixado gratuitamente no [site oficial](https://www.eclipse.org/downloads/). 
@@ -67,29 +72,33 @@ Digite um nome para a classe e clique em "Finish"
 que você acabou de criar no Package Explorer. Selecione "Run As" e "Java Application". 
 Então voilá! O console do Eclipse exibirá a saída do seu programa.
 
+##
+
 ### <a name= "datatypes"> Tipos de Dados </a>
 Java tem diversos tipos de dados que podem ser divididos em dois grupos:
-primitivos e de referência. Os tipos de dados primitivos são aqueles que armazenam
-valores simples, como números inteiros, números de ponto flutuante e caractere. Já os
-tipos de dados de referência armazenam referências a objetos. Vamos focar nos tipos primitivos
+primitivos e as Wrapper Classes. Os tipos de dados primitivos são aqueles que armazenam
+valores simples, como números inteiros, números de ponto flutuante e caractere. Já as Wrapper Classes armazenam referências a objetos. Vamos focar nos tipos primitivos
 que são os que mais vão ser trabalhados em sala. Veja a seguir:
 
-|Tipo|Tamanho|
-|---|---
-|byte|8 bits|
-|short|16 bits|
-|int|32 bits|
-|long|64 bits|
-|float|32 bits|
-|Double (Tipo Referência)|64 bits|
-|char|16 bits|
-|boolean|8 bits|
+|Tipo|Tamanho|Wrapper Class|
+|---|---|---
+|byte|8 bits|Byte
+|short|16 bits|Short
+|int|32 bits|Integer
+|long|64 bits|Long
+|float|32 bits|Float
+|double|64 bits|Double
+|char|16 bits|Character
+|boolean|1 bits|Boolean
 
-Essa tabela deve ter assustado um pouco mas é super simples de entender,
-os tipos que armazenam números inteiros são os: (short, int e long) e quanto maior a quantidade de bits
+Essa tabela deve ter assustado um pouco mas é super simples de entender, basicamente nela estão o tipo, o tamanho
+(valor máximo que podemos atribuir a ela) e a sua representação de Wrapper Class.
+Os tipos que armazenam números inteiros são os: (short, int e long) e quanto maior a quantidade de bits
 maior será o valor que poderá ser armazenado neles, e os tipos que representam números com casas decimais são os:
 (float e double) seguindo a mesma lógica. Já o tipo (char) serve para representar apenas caracteres como letras 
 singulares ou apenas números e o tipo (boolean) serve para representar valores lógicos como true ou false, 0 ou 1.
+
+##
 
 Para declarar uma variável em Java utilizamos a seguinte sintaxe:
 ```java
@@ -118,6 +127,7 @@ Double numeroDouble = 2.5;
 boolean tipoBooleano = true;
 char tipoCaractere = 'Y';
 ```
+##
 
 ### <a name= "operadores"> Operadores </a>
 Podemos também realizar operações matemáticas e 
@@ -139,6 +149,8 @@ lógicas no nosso código Java, segue uma tabela com os principais operadores:
 |&&	|E lógico
 
 Além destes operadores também temos o operador `||` que representa o OU lógico.
+
+##
 
 ### <a name= "estruturascontrole"> Estruturas de Controle </a>
 As estruturas de controle são usadas geralmente para controlar o fluxo de execução do programa. As principais estruturas de controle em Java são:
@@ -351,3 +363,71 @@ Neste exemplo, o bloco de código dentro das chaves é executado primeiro, impri
 ```
 
 É importante notar que a variável `i` é inicializada antes do loop `do-while`, pois ela precisa ter um valor antes de ser usada no bloco de código.
+
+### <a name= "arrays"> Arrays ou Vetores Unidimensionais </a>
+
+Arrays em Java são objetos que armazenam **uma coleção de elementos de um mesmo tipo em uma única variável**. Os elementos são acessados por meio de um índice que começa em 0 e vai até o tamanho do array menos 1 (Ou seja, quando um Array tiver o tamanho 5, o índice dele vai até [5-1]).
+
+A declaração e criação de um array em Java segue a seguinte sintaxe:
+
+```java
+tipoDoArray[] nomeDoArray = new tipoDoArray[tamanhoDoArray];
+```
+
+Neste exemplo o `tipoDoArray` representa o tipo de dados que o array irá armazenar, `nomeDoArray` é o nome
+que damos a este array e o `tamanhoDoArray` é o número de elementos que este array irá armazenar.
+
+Um array pode ser inicializado também durante sua criação, como no exemplo abaixo:
+
+```java
+int [] numeros = {10, 20, 30, 40, 50}
+```
+
+Também podemos inicializar um array com um tamanho e atribuir valores 
+aos seus elementos usando um loop for, como no exemplo abaixo:
+
+```java
+int[] numeros = new int[5];
+for (int i = 0; i < numeros.length; i++) {
+    numeros[i] = i * 10;
+}
+```
+
+Além disso, o comprimento de um array pode ser obtido usando a propriedade length, 
+como mostrado no exemplo abaixo:
+
+```java
+int tamanho = numeros.length;
+```
+
+Os elementos de um array podem ser acessados por meio de um `índice`, como veremos a seguir:
+
+
+```java
+int valor = numeros[1];
+```
+
+Também podemos iterar sobre os elementos de um array usando um loop for, como mostrado no exemplo abaixo:
+
+```java
+int[] numeros = {10, 20, 30, 40, 50};
+for (int i = 0; i < numeros.length; i++) {
+    System.out.println(numeros[i]);
+}
+```
+
+Também podemos usar um loop foreach, que itera sobre todos os elementos de um array em ordem, 
+como mostrado no exemplo a seguir:
+
+```java
+int[] numeros = {10, 20, 30, 40, 50};
+for (int numero : numeros) {
+    System.out.println(numero);
+}
+```
+
+O uso de arrays em Java é bastante comum e útil em diversas situações. 
+No entanto, é importante ter cuidado ao trabalhar com arrays para evitar 
+exceptions (exceções) como a IndexOutOfBounds (Um erro que ocorre quando tentamos
+acessar um elemento que excede o tamanho máximo do array ou em algumas outras ocasiões envolvendo
+seu índice).
