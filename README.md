@@ -1,3 +1,5 @@
+Language: > **PT-BR** |  [EN](https://github.com/Ivi-SCD/Logica-da-Programacao-1P/blob/main/README_EN.md)
+
 ## Lógica de Programação :computer:
 #### Opa Galera! To criando esse repositório pra ajudar vocês na cadeira de **Lógica de Programação** :computer:.
 Sei que muitos de vocês estão começando agora no mundo da programação e podem estar enfrentando
@@ -20,6 +22,7 @@ meu [Whatsapp apenas clicando aqui.](https://api.whatsapp.com/send?phone=5581997
 
 *Listas de Exercicios:* (Para verificar as respostas entre no diretório de resoluções na pasta src logo após e selecione a dificuldade, em seguida procure a classe que mais se adepta a questão, por exemplo, a questão de número 1 na dificuldade díficil no arquivo .txt é a questão que envolve números de Mersenne, logo, sua classe será a NumerosMersenne)
 * [Estruturas Condicionais](https://github.com/Ivi-SCD/Logica-da-Programacao-1P/tree/main/Listas%20de%20Exercicios/Estruturas%20Condicionais)
+* [Arrays](https://github.com/Ivi-SCD/Logica-da-Programacao-1P/tree/main/Listas%20de%20Exercicios/Arrays)
 
 ## Vamos lá, Mão na massa!
 Primeiro vamos começar falando sobre a própria linguagem que será utilizada em sala a linguagem Java, 
