@@ -1,23 +1,23 @@
 ### Questões Fáceis
 
-1) Crie um array de inteiros com tamanho 5 e atribua valores a cada um de seus elementos.
-2) Crie um array de Strings e inicialize-o com os valores "hello", "world", "java".
-3) Escreva um loop for que itere sobre todos os elementos de um array de doubles e imprima cada elemento na tela.
-4) Crie um array de booleanos e atribua o valor true à primeira posição e o valor false à segunda posição.
-5) Escreva um programa que crie um array de inteiros e calcule a soma de todos os seus elementos.
+1) Crie um array de inteiros com 5 elementos e atribua valores a cada um deles. Em seguida, exiba na tela o valor do terceiro elemento.
+2) Crie um array de Strings com 3 elementos e atribua valores a cada um deles. Em seguida, exiba na tela o segundo elemento.
+3) Crie um array de doubles com 4 elementos e atribua valores a cada um deles. Em seguida, exiba na tela a soma de todos os elementos do array.
+4) Crie um array de inteiros com 6 elementos e preencha todos eles com o valor 10. Em seguida, exiba na tela o valor do quarto elemento.
+5) Crie um array de booleanos com 2 elementos e atribua valores a cada um deles. Em seguida, exiba na tela o valor do segundo elemento.
 
 ### Questões Médias
 
-1) Escreva um método em Java que receba um array de inteiros e retorne o menor valor presente no array.
-2) Crie um método que receba um array de Strings e retorne o número de Strings que contém a letra "a".
-3) Escreva um programa que crie um array de inteiros e o ordene em ordem decrescente.
-4) Crie um método que receba um array de inteiros e retorne a média dos seus valores.
-5) Escreva um programa que crie dois arrays de inteiros e verifique se eles são iguais.
+1) Crie um array de inteiros com 10 elementos e encontre o valor máximo presente no array.
+2) Crie um array de inteiros com 5 elementos e ordene o array em ordem crescente.
+3) Crie um array de Strings com 6 elementos e crie um loop que exiba na tela cada um dos elementos em uma linha separada.
+4) Crie um array de inteiros com 8 elementos e remova o elemento que está na posição 4 do array.
+5) Crie um array de doubles com 7 elementos e encontre a média dos valores presentes no array.
 
 ### Questões Difíceis
 
-1) Escreva um programa que crie um array de inteiros e o preencha com números aleatórios entre 0 e 100.
-2) Escreva um método que receba um array de inteiros e retorne um novo array com apenas os valores pares presentes no array original.
-3) Escreva um programa que crie um array multidimensional de inteiros e calcule a média de todos os seus valores.
-4) Escreva um método que receba um array de inteiros e retorne o segundo menor valor presente no array.
-5) Escreva um programa que crie um array de objetos e ordene seus elementos em ordem alfabética.
+1) Crie um método que receba dois arrays de inteiros e retorne um novo array que contenha apenas os elementos do primeiro array que não estão presentes no segundo array.
+2) Crie um método que receba um array de inteiros e retorne um novo array que contenha apenas os elementos que aparecem em um número ímpar de vezes no array original.
+3) Crie um método que receba um array de inteiros e retorne um novo array que contenha apenas os números que são a soma dos elementos anteriores no array original.
+4) Crie um método que receba um array de inteiros e retorne o número mínimo de movimentos necessários para ordenar o array em ordem crescente.
+5) Crie um método que receba um array de inteiros e retorne um novo array que contenha apenas os elementos que aparecem em um número par de vezes no array original.
