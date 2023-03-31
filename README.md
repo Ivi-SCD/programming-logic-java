@@ -19,10 +19,13 @@ meu [Whatsapp apenas clicando aqui.](https://api.whatsapp.com/send?phone=5581997
 * [Operadores](#operadores)
 * [Estruturas de Controle](#estruturascontrole)
 * [Arrays Unidimensionais (Vetores)](#arrays)
+* [Entrada de Dados](#input)
 
 *Listas de Exercicios:* (Para verificar as respostas entre no diretório de resoluções na pasta src logo após e selecione a dificuldade, em seguida procure a classe que mais se adepta a questão, por exemplo, a questão de número 1 na dificuldade díficil no arquivo .txt é a questão que envolve números de Mersenne, logo, sua classe será a NumerosMersenne)
+
 * [Estruturas Condicionais](https://github.com/Ivi-SCD/Logica-da-Programacao-1P/tree/main/Listas%20de%20Exercicios/Estruturas%20Condicionais)
-* [Arrays](https://github.com/Ivi-SCD/Logica-da-Programacao-1P/tree/main/Listas%20de%20Exercicios/Arrays)
+* [Estruturas de Repetição](https://github.com/Ivi-SCD/Programming-Logic-Java/blob/main/Listas%20de%20Exercicios/Estruturas%20de%20Repeti%C3%A7%C3%A3o/01-ListaExercicios-EstruturasRepeticao.md)
+* [Arrays](https://github.com/Ivi-SCD/Programming-Logic-Java/blob/main/Listas%20de%20Exercicios/Arrays/01-ListaExercicios-arrays.md)
 
 ## Vamos lá, Mão na massa!
 Primeiro vamos começar falando sobre a própria linguagem que será utilizada em sala a linguagem Java, 
@@ -434,3 +437,177 @@ No entanto, é importante ter cuidado ao trabalhar com arrays para evitar
 exceptions (exceções) como a IndexOutOfBounds (Um erro que ocorre quando tentamos
 acessar um elemento que excede o tamanho máximo do array ou em algumas outras ocasiões envolvendo
 seu índice).
+
+##
+
+### <a name="input"></a> Entrada de Dados (Input)
+
+Uma das tarefas mais comuns em programas Java e em qualquer outra linguagem de programação é a entrada de dados pelo usuário. 
+Existem muitas maneiras de se fazer isso em Java, mas a mais comum é através da classe Scanner, que irei tratar neste tópico,
+ele se encontra disponível na biblioteca padrão do Java, ou seja não precisaremos de dependências externas como baixar algo pela internet.
+
+Pra usar a classe `Scanner`, você precisa primeiro importar a classe (Este conceito de importações você entenderá melhor
+com o decorrer no tempo) no início do seu código:
+
+```java
+import java.util.Scanner;
+```
+
+Em seguida, você pode criar uma instância da classe Scanner (Que nem fizemos na seção de Arrays unidimensionais) e usar seus métodos para obter dados do usuário. 
+Aqui está um exemplo bem simples que pede ao usuário para inserir seu nome e, em seguida, imprime uma saudação personalizada:
+
+```java
+import java.util.Scanner;
+
+public class EntradaDeDados {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Digite seu nome: ");
+        String nome = input.nextLine();
+        
+        System.out.println("Olá, " + nome + "!");
+    }
+}
+```
+
+Nesse exemplo, o método `nextLine()` é usado pra obter uma **linha inteira de entrada do usuário** (A função `nextLine()` 
+usamos quando queremos obter `Strings`) do usuário que é armazenada na variável `nome`. 
+A seguir, é impresso uma saudação personalizada na tela usando a concatenação de `String`.
+
+Além do `nextLine()`, a classe Scanner possui vários outros métodos para obter diferentes tipos de entrada do usuário, 
+incluindo `nextInt()`, `nextDouble()`, `nextBoolean()`, entre outros. Cada método é projetado para lidar com um tipo específico de dados.
+
+É importante lembrar que a classe `Scanner` pode lançar exceções se houver problemas ao ler a entrada do usuário, 
+como quando o usuário digita um valor que não pode ser convertido pro tipo esperado. Portanto, 
+é uma boa prática usar as declarações `try-catch` (Trataremos mais sobre este assunto quando o repositório
+de Orientação a Objetos estiver disponível) para lidar com essas exceções.
+e garantir que o programa não pare de funcionar abruptamente.
+
+##
+
+#### Exemplos Adicionais De Entrada de Dados em Java
+
+Para receber entrada de dados de diferentes tipos em Java, 
+a classe Scanner possui métodos específicos pra cada tipo de dado. Alguns exemplos são:
+
+`nextInt()`: lê um número inteiro;
+`nextFloat()`: lê um número de ponto flutuante de precisão simples;
+`nextDouble()`: lê um número de ponto flutuante de precisão dupla;
+`nextBoolean()`: lê um valor booleano (true ou false);
+`nextLine()`: lê uma linha completa de entrada como uma string.
+
+Veja um exemplo de como usar o método `nextInt()` para ler um número inteiro:
+
+```java
+import java.util.Scanner;
+
+public class EntradaDeDados {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Digite um número inteiro: ");
+        int num = input.nextInt();
+        
+        System.out.println("O número digitado foi " + num);
+    }
+}
+```
+
+Este exemplo pede ao usuário para digitar um número inteiro e armazena o valor digitado na variável `num`. 
+Em seguida, imprime na tela uma mensagem contendo o seu número.
+
+Você também pode usar a classe `Scanner` para ler outros tipos de dados, 
+como `float`, `double`, `boolean`, entre outros, usando os métodos correspondentes.
+
+#### Mas... Como o Scanner funciona internamente?
+
+O `Scanner` é uma classe da biblioteca padrão do Java que fornece métodos para ler dados do usuário ou de um arquivo 
+(Sim, podemos ler dados guardados em arquivos com a classe Scanner). Confira aqui um [Artigo adicional da Alura](https://www.alura.com.br/artigos/lendo-arquivos-texto-em-java) que oferece um exemplo de como podemos usar o Scanner para ler arquivos.
+
+Internamente, a classe Scanner usa expressões regulares para encontrar padrões de entrada e converter os dados em valores do tipo apropriado.
+
+Quando você cria uma instância da classe `Scanner`, pode especificar a fonte de entrada de dados, 
+que pode ser o sistema de entrada padrão (`System.in`) ou um arquivo.
+
+Quando você chama um método de leitura, como `nextInt()` ou `nextLine()`, o Scanner lê a entrada até encontrar um padrão 
+que corresponda ao tipo de dado solicitado. Por exemplo, ao usar o método `nextInt()`, o Scanner procura o 
+próximo valor inteiro na entrada. Se encontrar um valor inteiro, converte esse valor para um inteiro e retorna esse valor.
+
+Se a entrada não corresponder ao tipo de dado esperado, o `Scanner` lançará uma exceção do tipo `InputMismatchException`. 
+Por exemplo, se você chamar o método `nextInt()` para ler um valor inteiro e a entrada contiver um 
+valor de ponto flutuante, o Scanner lançará essa exceção.
+
+Para lidar com exceções lançadas pelo Scanner, você pode usar uma declaração `try-catch`, como falei anteriormente. 
+Além disso, é sempre uma boa prática verificar a entrada do usuário antes de tentar 
+convertê-la pro tipo de dado desejado.
+
+#### Buffering e Possíveis Problemas com o Scanner
+
+O buffering é um conceito importante pra compreender a entrada e saída dos dados. Quando você lê ou escreve dados em Java, 
+esses dados são armazenados em um buffer temporário antes de serem transferidos pro dispositivo de entrada ou saída.
+
+O Scanner também usa um buffer interno para armazenar os dados de entrada antes de serem lidos pelo programa. 
+Isso significa que, quando você chama um método de leitura, como `nextInt()` ou `nextLine()`, 
+o `Scanner` lê dados do buffer em vez de ler diretamente da entrada.
+
+Por isso, é bastante comum problemas ocorrerem com o Scanner devido a como este buffering funciona. 
+Por exemplo, se você chamar o método `nextLine()` depois de chamar um método de leitura diferente, como `nextInt()`, 
+pode ocorrer um problema de "quebra de linha". Isso ocorre porque, quando chamamos o método `nextInt()`, 
+o `Scanner` deixa uma nova linha não lida no buffer. Quando você chama `nextLine()`, o Scanner lê 
+essa nova linha em vez de esperar que o usuário digite uma nova entrada.
+
+Para resolver esse problema, você pode chamar o método `nextLine()` imediatamente após chamar um método de leitura diferente, 
+pra consumir a nova linha deixada pelo método anterior. Aqui está um exemplo:
+
+```java
+import java.util.Scanner;
+
+public class EntradaDeDados {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Digite um número inteiro: ");
+        int num = input.nextInt();
+        input.nextLine(); // consome a nova linha deixada pelo nextInt()
+        
+        System.out.print("Digite uma string: ");
+        String str = input.nextLine();
+        
+        System.out.println("Você digitou o número " + num + " e a string \"" + str + "\"");
+    }
+}
+```
+
+Neste exemplo, o método `nextLine()` é chamado imediatamente após o `nextInt()` para consumir a nova linha deixada pelo método anterior. 
+Em seguida, o programa solicita ao usuário que digite uma string usando o método `nextLine()` e armazena a entrada em uma 
+variável str. Finalmente, o programa imprime na tela os valores digitados pelo usuário.
+
+Outro problema comum que pode ocorrer com o Scanner é o "`NoSuchElementException`". Isso ocorre quando o Scanner tenta ler dados da entrada, 
+mas não há mais dados para serem lidos. Isso pode acontecer se o usuário pressionar `CTRL+Z ou CTRL+D` (dependendo do sistema operacional) 
+durante a entrada de dados.
+
+Para evitar essa exceção, você pode usar a condição `hasNext()` antes de chamar um método de leitura 
+pra verificar se há mais dados para serem lidos. Aqui está um exemplo:
+
+```java
+import java.util.Scanner;
+
+public class EntradaDeDados {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        while(input.hasNext()) {
+            String line = input.nextLine();
+            System.out.println("Você digitou: " + line);
+        }
+    }
+}
+```
+
+Nesse exemplo, o programa usa um loop para ler as linhas de entrada até que não haja mais dados para serem lidos. 
+O método `hasNext()` (TEM PROXIMO?) é usado pra verificar se existe um próximo dado, se houver, o loop continua executando. 
+Dentro do loop, o programa lê cada linha de entrada usando o método nextLine() e imprime na tela a 
+String "Você digitou: " seguida pela linha digitada pelo usuário.
+
+Com isso, você pode garantir que o programa não vai tentar ler mais dados do que o usuário inseriu, evitando o `NoSuchElementException`.
