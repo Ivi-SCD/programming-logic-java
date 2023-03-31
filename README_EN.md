@@ -19,9 +19,12 @@ my email.
 * [Operators](#operators)
 * [Control Structures](#controlstructures)
 * [One-Dimensional Arrays (Vectors)](#arrays)
+* [Data Input](#input)
 
 *Exercise Lists:* (To check the answers enter the resolutions directory in the src folder right after and select the difficulty, then look for the class that best fits the question, for example, question number 1 on the hard difficulty in .txt file is the question involving Mersenne numbers, so your class will be NumerosMersenne)
+
 * [Conditional Structures](https://github.com/Ivi-SCD/Logica-da-Programacao-1P/tree/main/Listas%20de%20Exercicios/Estrutturas%20Condicionais)
+* [Repeating Structures](https://github.com/Ivi-SCD/Programming-Logic-Java/blob/main/Listas%20de%20Exercicios/Estruturas%20de%20Repeti%C3%A7%C3%A3o/01-ListaExercicios-EstruturasRepeticao.md)
 * [Arrays](https://github.com/Ivi-SCD/Logica-da-Programacao-1P/tree/main/Listas%20de%20Exercicios/Arrays)
 
 ## Come on, Hands-on!
@@ -258,6 +261,8 @@ public static void main(String [] args) {
 ```
 ##
 
+### Repeating Structures
+
 #### `while` looping structure
 The `while` loop structure allows you to execute a block of code repeatedly as long as a condition is true. The syntax is as follows:
 
@@ -434,3 +439,163 @@ However, it is important to be careful when working with arrays to avoid
 exceptions such as IndexOutOfBounds (An error that occurs when we try to
 accessing an element that exceeds the maximum size of the array or on some other occasions involving
 your index).
+
+##
+
+### <a name="input"></a> Data Input (Input)
+One of the most common tasks in Java programs and in any other programming language is data input by the user.
+There are many ways to do this in Java, but the most common is through the Scanner class, which I will cover in this topic.
+It is available in the standard Java library, so we don't need external dependencies like downloading something from the internet.
+
+To use the `Scanner` class, you first need to import the class (you will better understand this concept of imports over time) at the beginning of your code:
+
+```java
+import java.util.Scanner;
+```
+
+Next, you can create an instance of the `Scanner` class (as we did in the section on one-dimensional Arrays) and use its methods to get data from the user.
+Here is a very simple example that asks the user to enter their name and then prints a personalized greeting:
+
+```java
+import java.util.Scanner;
+
+public class Input {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Enter your name: ");
+        String name = input.nextLine();
+        
+        System.out.println("Hello, " + name + "!");
+    }
+}
+```
+
+In this example, the `nextLine()` method is used to get **a full line of input from the user** (we use the `nextLine()` function when we want to get Strings) which is stored in the name variable.
+Next, a personalized greeting is printed on the screen using `String` concatenation.
+
+In addition to `nextLine()`, the `Scanner` class has several other methods for getting different types of input from the user,
+including `nextInt()`, `nextDouble()`, `nextBoolean()`, and others. Each method is designed to handle a specific type of data.
+
+It is important to remember that the `Scanner` class can throw exceptions if there are problems reading the user input,
+such as when the user enters a value that cannot be converted to the expected type. Therefore,
+it is a good practice to use `try-catch` statements (we will discuss this topic further when the Object-Oriented Programming repository is available) to handle these exceptions and ensure that the program does not stop functioning abruptly.
+
+##
+
+#### Additional Examples of Data Input in Java
+To receive input of different types in Java,
+the Scanner class has specific methods for each type of data. Some examples are:
+
+`nextInt()`: reads an integer;
+`nextFloat()`: reads a single-precision floating-point number;
+`nextDouble()`: reads a double-precision floating-point number;
+`nextBoolean()`: reads a boolean value (true or false);
+`nextLine()`: reads a complete line of input as a string.
+
+Here is an example of how to use the `nextInt()` method to read an integer:
+
+```java
+import java.util.Scanner;
+
+public class Input {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Enter an integer: ");
+        int num = input.nextInt();
+        
+        System.out.println("The number you entered was " + num);
+    }
+}
+```
+
+This example asks the user to enter an integer and stores the entered value in the `num` variable.
+Next, a message containing the entered number is printed on the screen.
+
+You can also use the `Scanner` class to read other types of data,
+such as `float`, `double`, `boolean`, and others, using the corresponding methods.
+
+#### But... How does the Scanner work internally?
+
+The Scanner is a class in the standard Java library that provides methods for reading data from the user or from a file (Yes, we can read data stored in files with the Scanner class). Check out this [article in Portuguese from Alura](https://www.alura.com.br/artigos/lendo-arquivos-texto-em-java) that offers an example of how we can use the `Scanner` to read files.
+
+Internally, the Scanner class uses regular expressions to find input patterns and convert the data into appropriate type values.
+
+When you create an instance of the `Scanner` class, you can specify the data input source, which can be either the standard input system (`System.in`) or a file.
+
+When you call a reading method such as `nextInt()` or `nextLine()`, the Scanner reads the input until it finds a pattern that matches the requested data type. For example, when using the `nextInt()` method, the `Scanner` looks for the next integer value in the input. If it finds an integer value, it converts that value to an integer and returns that value.
+
+If the input does not match the expected data type, the `Scanner` will throw an `InputMismatchException` exception. For instance, if you call the `nextInt()` method to read an integer value and the input contains a floating-point value, the `Scanner` will throw this exception.
+
+To handle exceptions thrown by the `Scanner`, you can use a `try-catch` statement, as mentioned earlier. Furthermore, it is always good practice to check the user input before attempting to convert it to the desired data type.
+
+#### Buffering aand Possible Issues with Scanner
+
+Buffering is an important concept to understand input and output of data. When you read or write data in Java,
+this data is stored in a temporary buffer before being transferred to the input or output device.
+
+The `Scanner` also uses an internal buffer to store input data before it is read by the program.
+This means that when you call a read method, such as `nextInt()` or `nextLine()`,
+the `Scanner` reads data from the buffer instead of reading directly from the input.
+
+Therefore, it is quite common for problems to occur with the `Scanner` due to how this buffering works.
+For example, if you call the `nextLine()` method after calling a different read method, such as `nextInt()`,
+a "line break" problem may occur. This happens because when we call the `nextInt()` method,
+the `Scanner` leaves an unread newline character in the buffer. When you call `nextLine()`, the `Scanner` reads
+this newline character instead of waiting for the user to enter new input.
+
+To solve this problem, you can call the `nextLine()` method immediately after calling a different read method,
+to consume the newline character left by the previous method. Here is an example:
+
+```
+import java.util.Scanner;
+
+public class InputData {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Enter an integer: ");
+        int num = input.nextInt();
+        input.nextLine(); // consume the newline character left by nextInt()
+        
+        System.out.print("Enter a string: ");
+        String str = input.nextLine();
+        
+        System.out.println("You entered the number " + num + " and the string \"" + str + "\"");
+    }
+}
+```
+
+In this example, the `nextLine()` method is called immediately after `nextInt()` to consume the newline character left by the previous method.
+Then, the program prompts the user to enter a string using the `nextLine()` method and stores the input in a variable called str.
+Finally, the program prints the values entered by the user on the screen.
+
+Another common problem that can occur with the `Scanner` is the `NoSuchElementException`. This happens when the `Scanner` tries to read data from the input,
+but there is no more data to be read. This can happen if the user presses `CTRL+Z or CTRL+D` (depending on the operating system)
+during the input of data.
+
+To avoid this exception, you can use the `hasNext()` condition before calling a read method
+to check if there is more data to be read. Here is an example:
+
+```java
+import java.util.Scanner;
+
+public class InputData {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        while(input.hasNext()) {
+            String line = input.nextLine();
+            System.out.println("You entered: " + line);
+        }
+    }
+}
+```
+
+In this example, the program uses a loop to read input lines until there is no more data to be read.
+The `hasNext()` method is used to check if there is a next data, if there is, the loop continues to execute.
+Inside the loop, the program reads each input line using the `nextLine()` method and prints the
+string "You entered: " followed by the line entered by the user.
+
+With this, you can ensure that the program will not try to read more data than the user entered, avoiding the `NoSuchElementException`.
