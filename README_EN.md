@@ -26,6 +26,7 @@ my email.
 * [Conditional Structures](https://github.com/Ivi-SCD/Logica-da-Programacao-1P/tree/main/Listas%20de%20Exercicios/Estrutturas%20Condicionais)
 * [Repeating Structures](https://github.com/Ivi-SCD/Programming-Logic-Java/blob/main/Listas%20de%20Exercicios/Estruturas%20de%20Repeti%C3%A7%C3%A3o/01-ListaExercicios-EstruturasRepeticao.md)
 * [Arrays](https://github.com/Ivi-SCD/Logica-da-Programacao-1P/tree/main/Listas%20de%20Exercicios/Arrays)
+* [Data Input](https://github.com/Ivi-SCD/Programming-Logic-Java/blob/main/Listas%20de%20Exercicios/Entrada%20de%20Dados/01-ListaExercicios-EntradaDeDados.md)
 
 ## Come on, Hands-on!
 First let's start talking about the language itself that will be used in the room the Java language,

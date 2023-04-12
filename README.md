@@ -26,6 +26,7 @@ meu [Whatsapp apenas clicando aqui.](https://api.whatsapp.com/send?phone=5581997
 * [Estruturas Condicionais](https://github.com/Ivi-SCD/Logica-da-Programacao-1P/tree/main/Listas%20de%20Exercicios/Estruturas%20Condicionais)
 * [Estruturas de Repetição](https://github.com/Ivi-SCD/Programming-Logic-Java/blob/main/Listas%20de%20Exercicios/Estruturas%20de%20Repeti%C3%A7%C3%A3o/01-ListaExercicios-EstruturasRepeticao.md)
 * [Arrays](https://github.com/Ivi-SCD/Programming-Logic-Java/blob/main/Listas%20de%20Exercicios/Arrays/01-ListaExercicios-arrays.md)
+* [Entrada de Dados](https://github.com/Ivi-SCD/Programming-Logic-Java/blob/main/Listas%20de%20Exercicios/Entrada%20de%20Dados/01-ListaExercicios-EntradaDeDados.md)
 
 ## Vamos lá, Mão na massa!
 Primeiro vamos começar falando sobre a própria linguagem que será utilizada em sala a linguagem Java, 
