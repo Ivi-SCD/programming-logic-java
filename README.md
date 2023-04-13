@@ -21,7 +21,7 @@ meu [Whatsapp apenas clicando aqui.](https://api.whatsapp.com/send?phone=5581997
 * [Arrays Unidimensionais (Vetores)](#arrays)
 * [Entrada de Dados](#input)
 
-*Listas de Exercicios:* (Para verificar as respostas entre no diretório de resoluções na pasta src logo após e selecione a dificuldade, em seguida procure a classe que mais se adepta a questão, por exemplo, a questão de número 1 na dificuldade díficil no arquivo .md é a questão que envolve números de Mersenne, logo, sua classe será a NumerosMersenne)
+*Listas de Exercicios:* (Para verificar as respostas entre no diretório de Resoluções logo após clicar no exercicio e selecione a dificuldade, em seguida procure a classe que mais se adepta a questão, por exemplo, a questão de número 1 sobre estruturas condicionais na dificuldade díficil no arquivo .md é a questão que envolve números de Mersenne, logo, sua classe será a NumerosMersenne)
 
 * [Estruturas Condicionais](https://github.com/Ivi-SCD/Logica-da-Programacao-1P/tree/main/Listas%20de%20Exercicios/Estruturas%20Condicionais)
 * [Estruturas de Repetição](https://github.com/Ivi-SCD/Programming-Logic-Java/blob/main/Listas%20de%20Exercicios/Estruturas%20de%20Repeti%C3%A7%C3%A3o/01-ListaExercicios-EstruturasRepeticao.md)
