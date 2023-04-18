@@ -21,7 +21,7 @@ my email.
 * [One-Dimensional Arrays (Vectors)](#arrays)
 * [Data Input](#input)
 
-*Exercise Lists:* (To check the answers enter the resolutions directory in the src folder right after and select the difficulty, then look for the class that best fits the question, for example, question number 1 on the hard difficulty in .txt file is the question involving Mersenne numbers, so your class will be NumerosMersenne)
+*Exercise Lists:* (To check the answers enter the resolutions directory in the "Resolucao" folder right after and select the difficulty, then look for the class that best fits the question, for example, question number 1 on the hard difficulty in .md file is the question involving Mersenne numbers, so your class will be NumerosMersenne)
 
 * [Conditional Structures](https://github.com/Ivi-SCD/Logica-da-Programacao-1P/tree/main/Listas%20de%20Exercicios/Estrutturas%20Condicionais)
 * [Repeating Structures](https://github.com/Ivi-SCD/Programming-Logic-Java/blob/main/Listas%20de%20Exercicios/Estruturas%20de%20Repeti%C3%A7%C3%A3o/01-ListaExercicios-EstruturasRepeticao.md)
