@@ -170,5 +170,7 @@ public class resolucaoSemFor {
         System.out.println("Nota Um: " + notaUm[4]);
         System.out.println("Nota Dois: " + notaDois[4]);
         System.out.println("Nota Tres: " + notaTres[4]);
+
+        sc.close();
     }
 }

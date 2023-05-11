@@ -14,7 +14,7 @@ public class resolucaoComFor {
 
         // Armazenamento dos valores
         for (int i = 0; i < tamanho; i++) {
-            
+
             if(i!= 0) {
                 sc.nextLine();
             }
@@ -63,5 +63,7 @@ public class resolucaoComFor {
             System.out.println("Nota Dois: " + notaDois[i]);
             System.out.println("Nota Tres: " + notaTres[i]);
         }
+
+        sc.close();
     }
 }
